@@ -1,0 +1,12 @@
+doctype html
+
+head
+    title #{title}
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/css/style.css')
+
+body
+    div.content
+        form&attributes({'method': 'post', 'action': '/users'})
+            input.item&attributes({'type': 'text', 'name': 'name', 'placeholder': 'User'})
+            button.item&attributes({'type': 'submit'}) Check

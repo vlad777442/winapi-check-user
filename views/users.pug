@@ -1,0 +1,18 @@
+doctype html
+
+head
+    title #{title}
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/css/style.css')
+
+body
+    div.content
+        if value === -1
+            if name
+                p User #{name} is not found
+            else
+                p Wrong username
+        else
+            p User #{name} exist
+        .btn
+            button(type='button' class='btn-back' onclick='history.back()') Back
